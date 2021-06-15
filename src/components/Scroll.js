@@ -37,8 +37,9 @@ export default function Scroll() {
             {list[0] && list.map((el, i) => (
                 <div key={i} style={{backgroundColor: el.dominant_color}}>
                     <h5>{el.title ? el.title : 'No Title Provided'}</h5>
-                    <p>Uploaded: {el.created_at.toLocaleString('en-US')}</p>
+                    {/* <p>Uploaded: {el.created_at.toLocaleString('en-US')}</p> */}
                     <p>Likes: {el.like_count}</p>
+                    <p>Pinned {el.repin_count} times</p>
                     <p>Pinned By: 
                         <a href={`https://www.pinterest.com/${el.pinner.username}`}>
                             {el.pinner.full_name}
