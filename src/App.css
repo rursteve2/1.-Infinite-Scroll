@@ -88,6 +88,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .pin:hover {
@@ -191,14 +192,12 @@ a {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
-  /* border: 1px solid black; */
 }
 
 .usercommentphoto {
   border-radius: 25px;
   height: 48px;
   width: 48px;
-  /* flex-grow: 1; */
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -206,7 +205,6 @@ a {
 .usercommentcontainer {
   flex-direction: column;
   margin-left: 20px;
-  /* flex-grow: 5; */
 }
 
 .commentusername {
@@ -223,5 +221,17 @@ a {
   .imagelink:hover .hoverdomainlink{
     margin-left: auto;
     margin-right: auto;
+  }
+
+}
+
+@media screen and (max-width: 585px) {
+  .mainimg {
+    width: 95%;
+  }
+
+  .hoverdomainlink {
+    width: 95%;
+    height: auto;
   }
 }
