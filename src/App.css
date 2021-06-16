@@ -2,37 +2,226 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration:none;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  color: '#fff';
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 5;
+}
+
+.navlink {
+  font-size: 16px;
+  padding: 12px;
+}
+
+.navlink:hover {
+  background-color: #ddd;
+  border-radius: 25px;
+}
+
+.searchbar {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ddd;
+  box-sizing: border-box;
+  padding: 14px;
+  padding-left: 20px;
+  width: 60%
+}
+
+.searchbar:focus {
+  border: 2px solid #4a85c9;
+}
+
+.navprofilepic {
+  border-radius: 25px;
+  padding: 12px;
+  margin-right: 15px;
+}
+
+.navprofilepic:hover {
+  background-color: #ddd;
+  border-radius: 25px;
+}
+
+.pinlogo {
+  fill: #e60023;
+  padding: 12px;
+}
+
+.pinlogo:hover {
+  background-color: #ddd;
+  border-radius: 25px;
+}
+
+.pinnotification, .pinmessage {
+  fill: #767676;
+  padding: 12px;
+  height: 24px;
+  width: 24px;
+}
+
+.pinnotification:hover, .pinmessage:hover {
+  background-color: #ddd;
+  border-radius: 25px;
+}
+
+.pin {
+  border-radius: 25px;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pin:hover {
+  box-shadow: 0px 0px 10px #000000;
+}
+
+.hoverdomainlink {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  margin-top: 0;
+  margin-bottom: 4px;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  flex-direction: column;
+  border-radius: 25px;
+  width: 500px;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.imagelink {
+  position: relative;
+  margin: 20px;
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mainimg {
+  width: 500px;
+  height: auto;
+  border-radius: 25px;
+}
+
+.imagelink:hover .hoverdomainlink{
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  width: 500px;
+}
+
+.pininfo {
+  text-align: left;
+  margin: 15px;
+  margin-left: 30px;
+  flex: 1;
+  margin-right: 30px;
+}
+
+.title {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.commentcontainer {
+  width: 100%;
+  flex-basis: 100%;
+}
+
+.domainlink {
+  text-decoration: underline;
+}
+
+.domainlink p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.pininfoicon {
+  padding: 12px;
+}
+
+.pininfoicon:hover {
+  background-color: #ddd;
+  padding: 12px;
+  border-radius: 20px;
+}
+
+.pinusername {
+  text-decoration: underline;
+  margin-left: 6px;
+}
+
+.singlecomment {
+  text-align: left;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  /* border: 1px solid black; */
+}
+
+.usercommentphoto {
+  border-radius: 25px;
+  height: 48px;
+  width: 48px;
+  /* flex-grow: 1; */
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.usercommentcontainer {
+  flex-direction: column;
+  margin-left: 20px;
+  /* flex-grow: 5; */
+}
+
+.commentusername {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1000px){
+  .pin {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .imagelink:hover .hoverdomainlink{
+    margin-left: auto;
+    margin-right: auto;
   }
 }
