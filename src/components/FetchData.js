@@ -12,7 +12,6 @@ function FetchData(page) {
       await setError(false);
       axios.get('./nyc_ttp_pins.json')
       .then(res => {
-          console.log(page, res.data[page])
           setList((prev) => [...prev, res.data[page]]
           )})
       setLoading(false);
