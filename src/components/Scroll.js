@@ -61,7 +61,7 @@ export default function Scroll() {
                         </p>
                     </div>
                         <div className='commentcontainer'>
-                            {el.comments.data[0] ? <a className='commentnumber' onClick={() => toggleComments(comments ? false : true)}><h5>Comments: {el.comments.data.length}</h5></a> : ''}
+                            {el.comments.data[0] ? <button className='commentnumber' onClick={() => toggleComments(comments ? false : true)}><h5>Comments: {el.comments.data.length}</h5></button> : ''}
                             {el.comments.data[0] ? el.comments.data.map((item, j) => (
                             <div key={j} className='singlecomment' style={comments ? {display: 'flex'} : {display: 'none'}}>
                                 <img className='usercommentphoto' alt='' src={'https://via.placeholder.com/48'} />

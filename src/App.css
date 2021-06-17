@@ -41,7 +41,8 @@ a {
   box-sizing: border-box;
   padding: 14px;
   padding-left: 20px;
-  width: 60%
+  width: 60%;
+  outline: none;
 }
 
 .searchbar:focus {
@@ -72,8 +73,6 @@ a {
 .pinnotification, .pinmessage {
   fill: #767676;
   padding: 12px;
-  /* height: 24px;
-  width: 24px; */
 }
 
 .pinnotification:hover, .pinmessage:hover {
@@ -119,7 +118,6 @@ a {
   position: relative;
   margin: 20px;
   flex: 1;
-  /* width: 500px; */
 }
 
 .mainimg {
@@ -132,7 +130,6 @@ a {
   visibility: visible;
   opacity: 1;
   height: auto;
-  /* width: 500px; */
 }
 
 .pininfo {
@@ -162,6 +159,9 @@ a {
 .commentnumber {
   text-decoration: underline;
   display: inline-block;
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
 
 .commentnumber:hover {
@@ -227,7 +227,13 @@ a {
     flex-direction: column;
   }
   
-  .imagelink:hover .hoverdomainlink{
+  .hoverdomainlink{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mainimg, .imagelink {
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -241,6 +247,11 @@ a {
 
   .mainimg {
     max-width: 100%;
+  }
+
+  .imagelink {
+    max-width: 500px;
+    margin: 20px;
   }
 
   .hoverdomainlink {
