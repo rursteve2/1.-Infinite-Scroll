@@ -7,6 +7,9 @@ Infinite scrolling can be used to render data as the user scrolls, giving the us
 ## Instructions
 To run, clone repo and run npm install in the directory. Then running npm start or the start script indicated in package.json will have the project running in localhost.
 
+## Deployment
+Deployed at pinterestclone.surge.sh
+
 ## Dependencies
 For this project the only dependency used was Axios, as a replacement for fetch.
 
