@@ -14,7 +14,7 @@ Deployed at pinterestclone.surge.sh
 For this project the only dependency used was Axios, as a replacement for fetch.
 
 ## Issues
-Changing anything - styling/rendering may cause posts to be rendered several times after saving file. Refreshing page should fix it.
+Changing anything - styling/rendering may cause posts to be rendered several times after saving file. Refreshing page should fix it. Some of the image links in the json sample data also didn't work so a placeholder was used instead.
 
 ## Acknowledgements
 Pinterest, for the icons, styling, and sample data.
