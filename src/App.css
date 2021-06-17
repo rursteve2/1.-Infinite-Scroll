@@ -17,7 +17,6 @@ a {
   top: 0;
   background-color: white;
   color: '#fff';
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   z-index: 5;
@@ -73,8 +72,8 @@ a {
 .pinnotification, .pinmessage {
   fill: #767676;
   padding: 12px;
-  height: 24px;
-  width: 24px;
+  /* height: 24px;
+  width: 24px; */
 }
 
 .pinnotification:hover, .pinmessage:hover {
@@ -88,7 +87,6 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .pin:hover {
@@ -121,6 +119,7 @@ a {
   position: relative;
   margin: 20px;
   flex: 1;
+  /* width: 500px; */
 }
 
 .mainimg {
@@ -133,15 +132,15 @@ a {
   visibility: visible;
   opacity: 1;
   height: auto;
-  width: 500px;
+  /* width: 500px; */
 }
 
 .pininfo {
   text-align: left;
   margin: 15px;
-  margin-left: 30px;
+  margin-left: 5%;
   flex: 1;
-  margin-right: 30px;
+  margin-right: 5%;
 }
 
 .title {
@@ -158,6 +157,15 @@ a {
 .commentcontainer {
   width: 100%;
   flex-basis: 100%;
+}
+
+.commentnumber {
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.commentnumber:hover {
+  cursor: pointer;
 }
 
 .domainlink {
@@ -192,6 +200,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
+  margin-right: 10%;
 }
 
 .usercommentphoto {
@@ -226,12 +235,15 @@ a {
 }
 
 @media screen and (max-width: 585px) {
+  .App {
+    width: 100%;
+  }
+
   .mainimg {
-    width: 95%;
+    max-width: 100%;
   }
 
   .hoverdomainlink {
-    width: 95%;
-    height: auto;
+    max-width: 100%;
   }
 }
